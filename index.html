@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css">
     <script src="app.js" defer></script>
     <script src="weather.js" defer></script>
+    <script src="exchange.js" defer></script>
+    <script src="holidays.js" defer></script>
   </head>
   <body class="w3-light-grey">
     <header class="w3-container w3-teal w3-padding-16">
@@ -32,6 +34,55 @@
         <p id="output" role="status">대기 중</p>
         <p><small><a href="https://open-meteo.com/">Weather data by Open-Meteo</a></small></p>
       </section>
+      <section class="holiday-section">
+        <h2>국가별 공휴일</h2>
+        <p>
+            <label for="holiday-countries">국가</label>
+            <select class="w3-select w3-border" id="holiday-countries">
+                <option value="JP">일본</option>
+                <option value="US">미국</option>
+                <option value="HK">홍콩</option>
+            </select>
+        </p>
+        <p><button class="w3-button w3-teal" id="holiday-btn" type="button">공휴일 조회</button></p>
+        <div id="output1" role="status">대기 중<div>
+      </section>
+      <section class="exchange-section">
+        <h2>국가별 환율</h2>
+
+        <p>
+            <label for="exchange-countries">국가</label>
+            <select class="w3-select w3-border" id="exchange-countries">
+                <option value="JPY">일본 엔화</option>
+                <option value="USD">미국 달러</option>
+                <option value="HKD">홍콩 달러</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="krwAmount">금액 (KRW)</label>
+            <input
+                class="w3-input w3-border"
+                type="number"
+                id="krwAmount"
+                value="10000"
+                min="0"
+            >
+        </p>
+
+        <p>
+            <button
+                class="w3-button w3-teal"
+                id="exchange-btn"
+                type="button">
+                환율 조회
+            </button>
+        </p>
+
+        <p id="output2" role="status">대기 중</p>
+</section>
+
+
       <section class="w3-container w3-card w3-white w3-margin-top">
         <h2>소개</h2>
         <img src="images/profile.png" alt="student01의 프로필 그림" width="160" class="w3-image">
