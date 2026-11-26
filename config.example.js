@@ -6,7 +6,7 @@ if (localStorage.getItem('API_PUBLIC_KEY') === null) {
 }
 const API_BASE_URL = 'https://esoqbcwgzjtwcqszwvin.supabase.co';
 const API_PUBLIC_KEY = localStorage.getItem('API_PUBLIC_KEY') || '';
-const BOOK_ID = 'student01';
+const BOOK_ID = '202510456';
 
 // [공개 키 지우기]: 저장한 키를 지우고 새로고침해 다시 입력받는다.
 const keyClearButton = document.querySelector('#key-clear-button');
