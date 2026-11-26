@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>my-web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css">
+    <script src="app.js" defer></script>
+    <script src="weather.js" defer></script>
+  </head>
+  <body class="w3-light-grey">
+    <header class="w3-container w3-teal w3-padding-16">
+      <h1>유현지의 웹 연습장</h1>
+    </header>
+    <nav class="w3-bar w3-white w3-card" aria-label="주 메뉴">
+      <a class="w3-bar-item w3-button w3-mobile w3-teal" href="index.html" aria-current="page">홈</a>
+      <a class="w3-bar-item w3-button w3-mobile" href="about.html">내 정보</a>
+      <a class="w3-bar-item w3-button w3-mobile" href="guestbook.local.html">방명록</a>
+    </nav>
+    <main class="w3-content w3-padding">
+      <section class="w3-container w3-card w3-white w3-margin-top">
+        <h2>지역별 현재 기온</h2>
+        <p>
+          <label for="city">지역</label>
+          <select class="w3-select w3-border" id="city">
+            <option value="seoul">서울</option>
+            <option value="jeonju">전주</option>
+            <option value="iksan">익산</option>
+          </select>
+        </p>
+        <p><button class="w3-button w3-teal" id="run-button" type="button">기온 조회</button></p>
+        <p id="output" role="status">대기 중</p>
+        <p><small><a href="https://open-meteo.com/">Weather data by Open-Meteo</a></small></p>
+      </section>
+      <section class="w3-container w3-card w3-white w3-margin-top">
+        <h2>소개</h2>
+        <img src="images/profile.png" alt="student01의 프로필 그림" width="160" class="w3-image">
+        <p>웹프로그래밍을 배우는 <strong>유현지</strong>입니다.</p>
+        <p id="greeting">인사말을 준비 중입니다.</p>
+        <p>
+          <button class="w3-button w3-teal" id="hello-button" type="button">인사 바꾸기</button>
+          <button class="w3-button w3-border" id="dark-button" type="button" aria-pressed="false">다크 모드</button>
+        </p>
+        <p id="count">클릭 0회</p>
+        <h3>취미</h3>
+        <ul>
+          <li>그림 그리기</li>
+          <li>독서하기</li>
+          <li>요리하기</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="w3-container w3-center w3-padding-16">
+      <p>수업용 연습 페이지 · 202510456</p>
+    </footer>
+  </body>
+</html>
